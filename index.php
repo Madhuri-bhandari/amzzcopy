@@ -1,6 +1,5 @@
 <?php
 session_start();
-//include_once('db.php');
 include('check.php');
 
 
@@ -9,11 +8,10 @@ if (! isset($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = base64_encode(openssl_random_pseudo_bytes(32));
 }
 
-// Check a POST is valid.
 if (isset($_POST['csrf_token']) && $_POST['csrf_token'] === $_SESSION['csrf_token']) {
     // POST data is valid.
 }
-//$atmp=0;
+
 ?>
 <!DOCTYPE html>
 <html>
