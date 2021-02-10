@@ -10,9 +10,9 @@ if(isset($_POST['email']) && isset($_POST['password']))
   $password = $_POST['password'];
 
   $query = "select email,password from user where email='$email' and password='$password'";
-  echo $query;
+  // echo $query;
   $result=mysqli_query($conn,$query);
-  echo $result->num_rows;
+  // echo $result->num_rows;
    if($result->num_rows==1)
    {
     echo 1;
