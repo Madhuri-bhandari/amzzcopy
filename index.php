@@ -41,7 +41,7 @@ h2 {
   margin-bottom: 2px;
 }
 
-.container { max-width: 360px; }
+.container { max-width: 370px; }
 
 .divider {
   text-align: center;
