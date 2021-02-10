@@ -188,7 +188,7 @@ h2 {
 
     $(document).ready(function() {
         // CSRF token is now automatically merged in AJAX request data.
-        $.post('/awesome/ajax/url', { foo: 'bar' }, function(data) {
+        $.post('check.php', { foo: 'bar' }, function(data) {
             console.log(data);
         });
     });
