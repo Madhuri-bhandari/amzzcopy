@@ -8,7 +8,7 @@ if(isset($_POST['email']) && isset($_POST['password']))
   $password = $_POST['password'];
 
   $query = "select * from user where email='$email' and password='$password'";
-  $result=mysql_query($conn,$query);
+  $result=mysqli_query($conn,$query);
   
    if($result->num_rows==1)
    {
