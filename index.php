@@ -67,14 +67,14 @@ h2 {
      padding:5px;
      margin: 0 0 10px;
      /*width: fit-content;*/
-      width:25%;
+      width:26%;
  
      
 }
 #result i{
   
    font-size:20px; 
-   margin-left: 2px;
+   margin-left: 3px;
    
 }
 #result b{
