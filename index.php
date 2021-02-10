@@ -133,7 +133,10 @@ h2 {
         }
         else
         {
-          $.ajax({
+          $.ajaxSetup({
+             headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
           type:'post',
           url:'check.php',
           data: {email:email,password:password},
