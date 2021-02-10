@@ -4,8 +4,8 @@ include_once('db.php');
 if(isset($_POST['email']) && isset($_POST['password']))
 {
 
-  $email = $_POST['email'];
-  $password = $_POST['password'];
+  $email = $_POST.get['email'];
+  $password = $_POST.get['password'];
 
   $query = "select * from user where email='$email' and password='$password'";
   $result=mysqli_query($conn,$query);
