@@ -1,6 +1,18 @@
 <?php
+session_start();
 include_once('db.php');
 include('check.php');
+
+
+// Create a new CSRF token.
+if (! isset($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = base64_encode(openssl_random_pseudo_bytes(32));
+}
+
+// Check a POST is valid.
+if (isset($_POST['csrf_token']) && $_POST['csrf_token'] === $_SESSION['csrf_token']) {
+    // POST data is valid.
+}
 //$atmp=0;
 ?>
 <!DOCTYPE html>
@@ -87,6 +99,7 @@ h2 {
           <div class="panel-body">   
           <form method="post">        
                          <div style="font-size: 25px;"> Sign In</div>
+                          <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" />
                                    <label><strong>Email(phone for mobile accounts)</strong></label>
                               <div class="form-group">
                                    <input type="text" name="email" id="email" maxlength="50" class="form-control">
@@ -134,9 +147,7 @@ h2 {
         else
         {
           $.ajax({
-             headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
+
           type:'post',
           url:'check.php',
           data: {email:email,password:password},
@@ -167,4 +178,18 @@ h2 {
        });   
       }
   });
+
+
+  window.csrf = { csrf_token: '<?php echo $_SESSION['csrf_token']; ?>' };
+
+    $.ajaxSetup({
+        data: window.csrf
+    });
+
+    $(document).ready(function() {
+        // CSRF token is now automatically merged in AJAX request data.
+        $.post('/awesome/ajax/url', { foo: 'bar' }, function(data) {
+            console.log(data);
+        });
+    });
 </script>
