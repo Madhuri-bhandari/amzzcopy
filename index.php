@@ -151,9 +151,9 @@ h2 {
           type:'post',
           url:'check.php',
           data: {email:email,password:password},
-           cache: false,
+          
           success:function(data) {
-            if(data == "Success"){
+            if(data == 1){
               window.location.href='next.php';
             }
             else{
