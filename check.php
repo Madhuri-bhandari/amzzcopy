@@ -11,7 +11,7 @@ if(isset($_POST['email']) && isset($_POST['password']))
   // $result=mysqli_query($conn,$query);
   
    //if($result->num_rows==1)
-  if($email=="madhuri@gmail.com"&& $password=="12345")
+  if($email=="demo123@gmail.com"&& $password=="12345")
    {
     echo 1;
    }
