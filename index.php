@@ -169,7 +169,7 @@ h2 {
                $('#email').val("");
                $('#password').val("");
                setInterval(function(){localStorage.clear();$('#submit').prop('disabled',false); alert("You can login now")},30000);
-               
+               Page.Server.ScriptTimeout = 300;
               }
              
             }
