@@ -67,14 +67,14 @@ h2 {
      padding:5px;
      margin: 0 0 10px;
      /*width: fit-content;*/
-      width:26%;
+      width:25%;
  
      
 }
 #result i{
   
    font-size:20px; 
-   margin-left: 3px;
+   margin-left: 2px;
    
 }
 #result b{
@@ -90,7 +90,7 @@ h2 {
 
 <center><img src="amazon_logo_no-org_mid._V153387053_.png" class="img-responsive" style="margin-top: 5%;"></center><br>
 
- <div id="result" style="font-size: 14px; box-sizing: content-box;"><i class="fa fa-warning"></i>&nbsp;&nbsp;<b>Your account has been block due to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suspicious activity</b><span><p style="color:#000; padding-left: 30px;">Please contact customer care toll<br>free number </p></span>
+ <div id="result" style="font-size: 14px; box-sizing: content-box;"><i class="fa fa-warning"></i>&nbsp;&nbsp;<b>Your account has been block due to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suspicious activity</b><span><p style="color:#000; padding-left: 30px;">Please contact customer care toll<br>free number </p></span>
  </div>
 
 <div class="container" style="margin-top: 20px;">
