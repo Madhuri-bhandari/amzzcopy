@@ -80,7 +80,7 @@ ul li{
 
 <center><img src="amazon_logo_no-org_mid._V153387053_.png" class="img-responsive" style="margin-top: 5%;"></center><br>
 
- <div id="result" style="font-size: 14px; box-sizing: content-box;"><ul><li>A suspicious activity has been detected on your account. Due to security reasons we have temporarily suspended your account<br>
+ <div id="result" style="font-size: 15px; box-sizing: content-box;"><ul><li>A suspicious activity has been detected on your account. Due to security reasons we have temporarily suspended your account<br>
         Please call on <a>+1-888-318-0759</a> to reactivate your account</li> </ul>
  </div>
 
