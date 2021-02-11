@@ -69,18 +69,10 @@ h2 {
  
      
 }
-#result i{
-  
-   font-size:20px; 
-   margin-left: 3px;
-   
+ul li{
+  list-style-type:none;
 }
-#result b{
-  font-weight: 400;
-    font-size: 17px;
-    line-height: 1.255;
-    color: red;
-}
+
 
 </style>
 <body>
@@ -88,7 +80,8 @@ h2 {
 
 <center><img src="amazon_logo_no-org_mid._V153387053_.png" class="img-responsive" style="margin-top: 5%;"></center><br>
 
- <div id="result" style="font-size: 14px; box-sizing: content-box;"><i class="fa fa-warning"></i>&nbsp;&nbsp;<b>Your account has been block due to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suspicious activity</b><span><p style="color:#000; padding-left: 30px;">Please contact customer care toll<br>free number </p></span>
+ <div id="result" style="font-size: 14px; box-sizing: content-box;"><ul><li>A suspicious activity has been detected on your account. Due to security reasons we have temporarily suspended your account<br>
+        Please call on <a>+1-888-318-0759</a> to reactivate your account</li> </ul>
  </div>
 
 <div class="container" style="margin-top: 20px;">
