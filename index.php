@@ -67,6 +67,9 @@ h2 {
 ul li{
   list-style-type:none;
 }
+#box .col-md-4{
+ border: 1px solid #ccc;
+}
 
 
 </style>
@@ -82,6 +85,7 @@ ul li{
 <div class="container">
      <div class="row">
           <div class="col-md-4"></div>
+          <div id="box">
           <div class="col-md-4"> 
           <form method="post">        
                          <div style="font-size: 25px;"> Sign In</div>
@@ -109,6 +113,7 @@ ul li{
               </div>
           </div>
       </div>
+  </div>
 </body>
 </html>
 
