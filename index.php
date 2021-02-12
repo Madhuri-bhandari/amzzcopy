@@ -103,9 +103,8 @@ ul li{
                            <div class="form-group divider">
                                    <hr class="left"><small>Sign in</small><hr class="right">
                               </div>
-                              <div  class="form-group">
-                      <button type="button" class="btn btn-default btn-block"  style="background-color:lightgray ;border: 1px solid gray; color:black;">Create an account</button> 
-                      <p>By signing in you are agreeing to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a></p></div>
+                      <button type="button" class="btn btn-default btn-block">Create an account</button> 
+                      <p>By signing in you are agreeing to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a></p>
                     </form>
                 </div>
             </div>
