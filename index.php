@@ -31,10 +31,10 @@ h2 {
   margin-bottom: 2px;
 }
 
-.container { 
+/*.container { 
 	width:30%; 
 	height: 50%;
-}
+}*/
 
 .divider {
   text-align: center;
@@ -81,8 +81,8 @@ ul li{
 
 <div class="container">
      <div class="row">
-          <div class="panel panel-default">
-          <div class="panel-body">   
+          <div class="col-md-4"></div>
+          <div class="col-md-4"> 
           <form method="post">        
                          <div style="font-size: 25px;"> Sign In</div>
                           <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" />
@@ -105,11 +105,10 @@ ul li{
                               </div>
                       <button type="button" class="btn btn-default btn-block">Create an account</button> 
                       <p>By signing in you are agreeing to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a></p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+                  </form>
+              </div>
+          </div>
+      </div>
 </body>
 </html>
 
