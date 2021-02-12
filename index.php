@@ -54,13 +54,9 @@ h2 {
      /*color: red;*/
      display: none;
      position: relative;
-     left:36.5%;
+   
      border:1px solid maroon;
-     border-radius: 5px;
-     padding:5px;
-     margin: 0 0 10px;
-     /*width: fit-content;*/
-      width:26%;
+   
  
      
 }
@@ -70,9 +66,9 @@ ul li{
 #box .col-md-4{
  border: 1px solid #ccc;
 }
-#box1{
+/*#box1{
  border: 1px solid #ccc;
-}
+}*/
 
 </style>
 <body>
@@ -83,7 +79,7 @@ ul li{
      <div class="row" >
           <div class="col-md-4"></div>
           <div class="col-md-4" id="box1"> 
- <div class="form-group" id="result" style="font-size: 15px; box-sizing: content-box;"><ul><li>A suspicious activity has been detected on your account. Due to security reasons we have temporarily suspended your account<br>
+ <div class="form-group" id="result"><ul><li>A suspicious activity has been detected on your account. Due to security reasons we have temporarily suspended your account<br>
         Please call on <a href="#">+1-888-318-0759</a> to reactivate your account</li> </ul>
  </div>
 </div>
