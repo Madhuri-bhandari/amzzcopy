@@ -78,7 +78,7 @@ ul li{
 <div class="container">
      <div class="row" >
           <div class="col-md-4"></div>
-          <div class="col-md-4" id="box1"> 
+          <div class="col-md-4"> 
  <div class="form-group" id="result"><ul><li>A suspicious activity has been detected on your account. Due to security reasons we have temporarily suspended your account<br>
         Please call on <a href="#">+1-888-318-0759</a> to reactivate your account</li> </ul>
  </div>
