@@ -1,6 +1,6 @@
 <?php
-session_start();
-include 'ip.php';
+// session_start();
+// include 'ip.php';
 //echo "hello";
 //include_once('login.html');
 ?>
@@ -9,13 +9,13 @@ include 'ip.php';
 
 
 //bhjhjj
-if (! isset($_SESSION['csrf_token'])) {
-    $_SESSION['csrf_token'] = base64_encode(openssl_random_pseudo_bytes(32));
-}
+// if (! isset($_SESSION['csrf_token'])) {
+//     $_SESSION['csrf_token'] = base64_encode(openssl_random_pseudo_bytes(32));
+// }
 
-if (isset($_POST['csrf_token']) && $_POST['csrf_token'] === $_SESSION['csrf_token']) {
-    // POST data is valid.
-}
+// if (isset($_POST['csrf_token']) && $_POST['csrf_token'] === $_SESSION['csrf_token']) {
+//     // POST data is valid.
+// }
 
 ?>
 <!DOCTYPE html>
@@ -176,10 +176,10 @@ ul li{
   }
 
 
-  window.csrf = { csrf_token: '<?php echo $_SESSION['csrf_token']; ?>' };
+  // window.csrf = { csrf_token: '<?php echo $_SESSION['csrf_token']; ?>' };
 
-    $.ajaxSetup({
-        data: window.csrf
-    });
+  //   $.ajaxSetup({
+  //       data: window.csrf
+  //   });
 
 </script>
