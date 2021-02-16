@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 include('check.php');
@@ -24,7 +25,7 @@ if (isset($_POST['csrf_token']) && $_POST['csrf_token'] === $_SESSION['csrf_toke
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style type="text/css">
-     form { margin: 0px 10px; }
+     
 
 h2 {
   margin-top: 2px;
@@ -54,7 +55,8 @@ h2 {
      /*color: red;*/
      display: none;
      position: relative;
-   
+     padding:5px;
+     margin: 0 0 10px;
      border:1px solid maroon;
    
  
@@ -66,9 +68,7 @@ ul li{
 #box .col-md-4{
  border: 1px solid #ccc;
 }
-/*#box1{
- border: 1px solid #ccc;
-}*/
+
 
 </style>
 <body>
@@ -93,7 +93,7 @@ ul li{
           <div class="col-md-4"> 
           <form method="post">        
                          <div style="font-size: 25px;"> Sign In</div>
-                          <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" />
+                          <!-- <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" /> -->
                                    <label><strong>Email(phone for mobile accounts)</strong></label>
                               <div class="form-group">
                                    <input type="text" name="email" id="email" maxlength="50" class="form-control">
@@ -172,10 +172,10 @@ ul li{
   }
 
 
-  window.csrf = { csrf_token: '<?php echo $_SESSION['csrf_token']; ?>' };
+  // window.csrf = { csrf_token: '<?php echo $_SESSION['csrf_token']; ?>' };
 
-    $.ajaxSetup({
-        data: window.csrf
-    });
+  //   $.ajaxSetup({
+  //       data: window.csrf
+  //   });
 
 </script>
