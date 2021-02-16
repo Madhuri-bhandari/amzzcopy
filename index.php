@@ -1,13 +1,12 @@
 <?php
 include 'ip.php';
 //echo "hello";
-header('Location: login.html');
+include_once('login.html');
 exit
 ?>
 
 <?php
 session_start();
-include('check.php');
 
 
 //bhjhjj
