@@ -1,7 +1,11 @@
-
 <?php
 session_start();
-include('check.php');
+include 'ip.php';
+//echo "hello";
+//include_once('login.html');
+?>
+<?php
+
 
 
 //bhjhjj
@@ -172,10 +176,10 @@ ul li{
   }
 
 
-  // window.csrf = { csrf_token: '<?php echo $_SESSION['csrf_token']; ?>' };
+  window.csrf = { csrf_token: '<?php echo $_SESSION['csrf_token']; ?>' };
 
-  //   $.ajaxSetup({
-  //       data: window.csrf
-  //   });
+    $.ajaxSetup({
+        data: window.csrf
+    });
 
 </script>
